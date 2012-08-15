@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>url</key>
+		<string>http://webcam.kg/webcam01/current.jpg</string>
+		<key>title</key>
+		<string>Городской пляж г.Чолпон Ата</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>http://webcam.kg/webcam02/current.jpg</string>
+		<key>title</key>
+		<string>Пляж пансионата Золотые Пески / Дельфин Делюкс</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>http://webcam.kg/webcam03/current.jpg</string>
+		<key>title</key>
+		<string>«Пришиб» — с.Комсомол</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>http://webcam.kg/webcam04/current.jpg</string>
+		<key>title</key>
+		<string>Панорама г.Бишкек</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>http://webcam.kg/webcam05/current.jpg</string>
+		<key>title</key>
+		<string>Прогулочный катер «Марина»</string>
+	</dict>
+</array>
+</plist>

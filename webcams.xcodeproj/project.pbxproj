@@ -21,6 +21,10 @@
 		600968F715DA0A1D00DBFC12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600968D515DA0A1B00DBFC12 /* Foundation.framework */; };
 		600968FF15DA0A1D00DBFC12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 600968FD15DA0A1D00DBFC12 /* InfoPlist.strings */; };
 		6009690215DA0A1D00DBFC12 /* webcamsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6009690115DA0A1D00DBFC12 /* webcamsTests.m */; };
+		6009690C15DA2E1900DBFC12 /* feed.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6009690B15DA2E1900DBFC12 /* feed.plist */; };
+		6009691215DA399000DBFC12 /* GRFXImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6009691115DA399000DBFC12 /* GRFXImageCell.m */; };
+		6009696A15DA763800DBFC12 /* libSDWebImageARC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6009696515DA761B00DBFC12 /* libSDWebImageARC.a */; };
+		6009696C15DA764D00DBFC12 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6009696B15DA764D00DBFC12 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 600968CE15DA0A1B00DBFC12;
 			remoteInfo = webcams;
+		};
+		6009696215DA761B00DBFC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6009695915DA761A00DBFC12 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53922D6F148C55820056699D;
+			remoteInfo = SDWebImage;
+		};
+		6009696415DA761B00DBFC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6009695915DA761A00DBFC12 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53761325155AD0D5005750A4;
+			remoteInfo = "SDWebImage ARC";
+		};
+		6009696615DA761B00DBFC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6009695915DA761A00DBFC12 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 531041E0157EAFA400BBABC3;
+			remoteInfo = "SDWebImage ARC+MKAnnotation";
+		};
+		6009696815DA761F00DBFC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6009695915DA761A00DBFC12 /* SDWebImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 53761307155AD0D5005750A4;
+			remoteInfo = "SDWebImage ARC";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,6 +86,11 @@
 		600968FE15DA0A1D00DBFC12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6009690015DA0A1D00DBFC12 /* webcamsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = webcamsTests.h; sourceTree = "<group>"; };
 		6009690115DA0A1D00DBFC12 /* webcamsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webcamsTests.m; sourceTree = "<group>"; };
+		6009690B15DA2E1900DBFC12 /* feed.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = feed.plist; sourceTree = "<group>"; };
+		6009691015DA399000DBFC12 /* GRFXImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXImageCell.h; sourceTree = "<group>"; };
+		6009691115DA399000DBFC12 /* GRFXImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXImageCell.m; sourceTree = "<group>"; };
+		6009695915DA761A00DBFC12 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = ../SDWebImage/SDWebImage.xcodeproj; sourceTree = "<group>"; };
+		6009696B15DA764D00DBFC12 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6009696C15DA764D00DBFC12 /* ImageIO.framework in Frameworks */,
+				6009696A15DA763800DBFC12 /* libSDWebImageARC.a in Frameworks */,
 				600968D415DA0A1B00DBFC12 /* UIKit.framework in Frameworks */,
 				600968D615DA0A1B00DBFC12 /* Foundation.framework in Frameworks */,
 				600968D815DA0A1B00DBFC12 /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +122,8 @@
 		600968C415DA0A1A00DBFC12 = {
 			isa = PBXGroup;
 			children = (
+				6009696B15DA764D00DBFC12 /* ImageIO.framework */,
+				6009695915DA761A00DBFC12 /* SDWebImage.xcodeproj */,
 				600968D915DA0A1B00DBFC12 /* webcams */,
 				600968FA15DA0A1D00DBFC12 /* webcamsTests */,
 				600968D215DA0A1B00DBFC12 /* Frameworks */,
@@ -113,6 +154,7 @@
 		600968D915DA0A1B00DBFC12 /* webcams */ = {
 			isa = PBXGroup;
 			children = (
+				6009690B15DA2E1900DBFC12 /* feed.plist */,
 				600968E215DA0A1B00DBFC12 /* GRFXAppDelegate.h */,
 				600968E315DA0A1B00DBFC12 /* GRFXAppDelegate.m */,
 				600968E515DA0A1B00DBFC12 /* MainStoryboard_iPhone.storyboard */,
@@ -120,6 +162,8 @@
 				600968EB15DA0A1B00DBFC12 /* GRFXViewController.h */,
 				600968EC15DA0A1C00DBFC12 /* GRFXViewController.m */,
 				600968DA15DA0A1B00DBFC12 /* Supporting Files */,
+				6009691015DA399000DBFC12 /* GRFXImageCell.h */,
+				6009691115DA399000DBFC12 /* GRFXImageCell.m */,
 			);
 			path = webcams;
 			sourceTree = "<group>";
@@ -154,6 +198,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6009695A15DA761A00DBFC12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6009696315DA761B00DBFC12 /* libSDWebImage.a */,
+				6009696515DA761B00DBFC12 /* libSDWebImageARC.a */,
+				6009696715DA761B00DBFC12 /* libSDWebImageARC+MKAnnotation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +222,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6009696915DA761F00DBFC12 /* PBXTargetDependency */,
 			);
 			name = webcams;
 			productName = webcams;
@@ -213,6 +268,12 @@
 			mainGroup = 600968C415DA0A1A00DBFC12;
 			productRefGroup = 600968D015DA0A1B00DBFC12 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6009695A15DA761A00DBFC12 /* Products */;
+					ProjectRef = 6009695915DA761A00DBFC12 /* SDWebImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				600968CE15DA0A1B00DBFC12 /* webcams */,
@@ -220,6 +281,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6009696315DA761B00DBFC12 /* libSDWebImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImage.a;
+			remoteRef = 6009696215DA761B00DBFC12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6009696515DA761B00DBFC12 /* libSDWebImageARC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImageARC.a;
+			remoteRef = 6009696415DA761B00DBFC12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6009696715DA761B00DBFC12 /* libSDWebImageARC+MKAnnotation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImageARC+MKAnnotation.a";
+			remoteRef = 6009696615DA761B00DBFC12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		600968CD15DA0A1B00DBFC12 /* Resources */ = {
@@ -229,6 +314,7 @@
 				600968DE15DA0A1B00DBFC12 /* InfoPlist.strings in Resources */,
 				600968E715DA0A1B00DBFC12 /* MainStoryboard_iPhone.storyboard in Resources */,
 				600968EA15DA0A1B00DBFC12 /* MainStoryboard_iPad.storyboard in Resources */,
+				6009690C15DA2E1900DBFC12 /* feed.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +352,7 @@
 				600968E015DA0A1B00DBFC12 /* main.m in Sources */,
 				600968E415DA0A1B00DBFC12 /* GRFXAppDelegate.m in Sources */,
 				600968ED15DA0A1C00DBFC12 /* GRFXViewController.m in Sources */,
+				6009691215DA399000DBFC12 /* GRFXImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +371,11 @@
 			isa = PBXTargetDependency;
 			target = 600968CE15DA0A1B00DBFC12 /* webcams */;
 			targetProxy = 600968F815DA0A1D00DBFC12 /* PBXContainerItemProxy */;
+		};
+		6009696915DA761F00DBFC12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SDWebImage ARC";
+			targetProxy = 6009696815DA761F00DBFC12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -377,10 +469,19 @@
 		6009690615DA0A1D00DBFC12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Adilet Abylov (2S76T9YSS7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Adilet Abylov (2S76T9YSS7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "webcams/webcams-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"”$(OBJROOT)/UninstalledProducts/include”",
+					"”$(TARGET_BUILD_DIR)/usr/local/lib/include”",
+				);
 				INFOPLIST_FILE = "webcams/webcams-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "075C08FF-C446-46B6-8509-C50AF535DDBF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "075C08FF-C446-46B6-8509-C50AF535DDBF";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -388,10 +489,19 @@
 		6009690715DA0A1D00DBFC12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Adilet Abylov";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Adilet Abylov";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "webcams/webcams-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"”$(OBJROOT)/UninstalledProducts/include”",
+					"”$(TARGET_BUILD_DIR)/usr/local/lib/include”",
+				);
 				INFOPLIST_FILE = "webcams/webcams-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -449,6 +559,7 @@
 				6009690715DA0A1D00DBFC12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6009690815DA0A1D00DBFC12 /* Build configuration list for PBXNativeTarget "webcamsTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +568,7 @@
 				6009690A15DA0A1D00DBFC12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

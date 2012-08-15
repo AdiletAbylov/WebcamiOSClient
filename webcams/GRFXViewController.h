@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GRFXViewController : UIViewController
+@interface GRFXViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *feedTable;
+@property (nonatomic, retain) NSArray *feedData;
 
 @end
