@@ -25,6 +25,14 @@
 		6009691215DA399000DBFC12 /* GRFXImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6009691115DA399000DBFC12 /* GRFXImageCell.m */; };
 		6009696A15DA763800DBFC12 /* libSDWebImageARC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6009696515DA761B00DBFC12 /* libSDWebImageARC.a */; };
 		6009696C15DA764D00DBFC12 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6009696B15DA764D00DBFC12 /* ImageIO.framework */; };
+		607D58F615DB9ACB0081C061 /* KTPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 607D58E815DB9ACB0081C061 /* KTPhotoBrowser.bundle */; };
+		607D58F715DB9ACB0081C061 /* KTPhotoBrowserGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 607D58EB15DB9ACB0081C061 /* KTPhotoBrowserGlobal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		607D58F815DB9ACB0081C061 /* KTPhotoScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607D58ED15DB9ACB0081C061 /* KTPhotoScrollViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		607D58F915DB9ACB0081C061 /* KTPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 607D58EF15DB9ACB0081C061 /* KTPhotoView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		607D58FA15DB9ACB0081C061 /* KTThumbsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 607D58F115DB9ACB0081C061 /* KTThumbsView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		607D58FB15DB9ACB0081C061 /* KTThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607D58F315DB9ACB0081C061 /* KTThumbsViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		607D58FC15DB9ACB0081C061 /* KTThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 607D58F515DB9ACB0081C061 /* KTThumbView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		607D58FF15DB9D1B0081C061 /* ImageDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 607D58FE15DB9D1B0081C061 /* ImageDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +99,22 @@
 		6009691115DA399000DBFC12 /* GRFXImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXImageCell.m; sourceTree = "<group>"; };
 		6009695915DA761A00DBFC12 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = ../SDWebImage/SDWebImage.xcodeproj; sourceTree = "<group>"; };
 		6009696B15DA764D00DBFC12 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		607D58E815DB9ACB0081C061 /* KTPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KTPhotoBrowser.bundle; sourceTree = "<group>"; };
+		607D58E915DB9ACB0081C061 /* KTPhotoBrowserDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTPhotoBrowserDataSource.h; sourceTree = "<group>"; };
+		607D58EA15DB9ACB0081C061 /* KTPhotoBrowserGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTPhotoBrowserGlobal.h; sourceTree = "<group>"; };
+		607D58EB15DB9ACB0081C061 /* KTPhotoBrowserGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTPhotoBrowserGlobal.m; sourceTree = "<group>"; };
+		607D58EC15DB9ACB0081C061 /* KTPhotoScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTPhotoScrollViewController.h; sourceTree = "<group>"; };
+		607D58ED15DB9ACB0081C061 /* KTPhotoScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTPhotoScrollViewController.m; sourceTree = "<group>"; };
+		607D58EE15DB9ACB0081C061 /* KTPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTPhotoView.h; sourceTree = "<group>"; };
+		607D58EF15DB9ACB0081C061 /* KTPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTPhotoView.m; sourceTree = "<group>"; };
+		607D58F015DB9ACB0081C061 /* KTThumbsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTThumbsView.h; sourceTree = "<group>"; };
+		607D58F115DB9ACB0081C061 /* KTThumbsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTThumbsView.m; sourceTree = "<group>"; };
+		607D58F215DB9ACB0081C061 /* KTThumbsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTThumbsViewController.h; sourceTree = "<group>"; };
+		607D58F315DB9ACB0081C061 /* KTThumbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTThumbsViewController.m; sourceTree = "<group>"; };
+		607D58F415DB9ACB0081C061 /* KTThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTThumbView.h; sourceTree = "<group>"; };
+		607D58F515DB9ACB0081C061 /* KTThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTThumbView.m; sourceTree = "<group>"; };
+		607D58FD15DB9D1B0081C061 /* ImageDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDataSource.h; sourceTree = "<group>"; };
+		607D58FE15DB9D1B0081C061 /* ImageDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +146,7 @@
 		600968C415DA0A1A00DBFC12 = {
 			isa = PBXGroup;
 			children = (
+				607D58E715DB9ACB0081C061 /* KTPhotoBrowser */,
 				6009696B15DA764D00DBFC12 /* ImageIO.framework */,
 				6009695915DA761A00DBFC12 /* SDWebImage.xcodeproj */,
 				600968D915DA0A1B00DBFC12 /* webcams */,
@@ -154,6 +179,8 @@
 		600968D915DA0A1B00DBFC12 /* webcams */ = {
 			isa = PBXGroup;
 			children = (
+				607D58FD15DB9D1B0081C061 /* ImageDataSource.h */,
+				607D58FE15DB9D1B0081C061 /* ImageDataSource.m */,
 				6009690B15DA2E1900DBFC12 /* feed.plist */,
 				600968E215DA0A1B00DBFC12 /* GRFXAppDelegate.h */,
 				600968E315DA0A1B00DBFC12 /* GRFXAppDelegate.m */,
@@ -206,6 +233,27 @@
 				6009696715DA761B00DBFC12 /* libSDWebImageARC+MKAnnotation.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		607D58E715DB9ACB0081C061 /* KTPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				607D58E815DB9ACB0081C061 /* KTPhotoBrowser.bundle */,
+				607D58E915DB9ACB0081C061 /* KTPhotoBrowserDataSource.h */,
+				607D58EA15DB9ACB0081C061 /* KTPhotoBrowserGlobal.h */,
+				607D58EB15DB9ACB0081C061 /* KTPhotoBrowserGlobal.m */,
+				607D58EC15DB9ACB0081C061 /* KTPhotoScrollViewController.h */,
+				607D58ED15DB9ACB0081C061 /* KTPhotoScrollViewController.m */,
+				607D58EE15DB9ACB0081C061 /* KTPhotoView.h */,
+				607D58EF15DB9ACB0081C061 /* KTPhotoView.m */,
+				607D58F015DB9ACB0081C061 /* KTThumbsView.h */,
+				607D58F115DB9ACB0081C061 /* KTThumbsView.m */,
+				607D58F215DB9ACB0081C061 /* KTThumbsViewController.h */,
+				607D58F315DB9ACB0081C061 /* KTThumbsViewController.m */,
+				607D58F415DB9ACB0081C061 /* KTThumbView.h */,
+				607D58F515DB9ACB0081C061 /* KTThumbView.m */,
+			);
+			path = KTPhotoBrowser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +363,7 @@
 				600968E715DA0A1B00DBFC12 /* MainStoryboard_iPhone.storyboard in Resources */,
 				600968EA15DA0A1B00DBFC12 /* MainStoryboard_iPad.storyboard in Resources */,
 				6009690C15DA2E1900DBFC12 /* feed.plist in Resources */,
+				607D58F615DB9ACB0081C061 /* KTPhotoBrowser.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +402,13 @@
 				600968E415DA0A1B00DBFC12 /* GRFXAppDelegate.m in Sources */,
 				600968ED15DA0A1C00DBFC12 /* GRFXViewController.m in Sources */,
 				6009691215DA399000DBFC12 /* GRFXImageCell.m in Sources */,
+				607D58F715DB9ACB0081C061 /* KTPhotoBrowserGlobal.m in Sources */,
+				607D58F815DB9ACB0081C061 /* KTPhotoScrollViewController.m in Sources */,
+				607D58F915DB9ACB0081C061 /* KTPhotoView.m in Sources */,
+				607D58FA15DB9ACB0081C061 /* KTThumbsView.m in Sources */,
+				607D58FB15DB9ACB0081C061 /* KTThumbsViewController.m in Sources */,
+				607D58FC15DB9ACB0081C061 /* KTThumbView.m in Sources */,
+				607D58FF15DB9D1B0081C061 /* ImageDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

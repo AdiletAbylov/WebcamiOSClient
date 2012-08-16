@@ -8,6 +8,9 @@
 
 #import "GRFXViewController.h"
 #import "GRFXImageCell.h"
+#import "KTPhotoScrollViewController.h"
+#import "ImageDataSource.h"
+#import <SDWebImage/SDImageCache.h>
 
 @interface GRFXViewController ()
 
@@ -62,6 +65,18 @@
     [cell loadImageAsync:[[feedData objectAtIndex:indexPath.row] objectForKey:@"url"]];     
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ImageDataSource *source = [[ImageDataSource alloc] init];
+    NSString *imageKey = [[feedData objectAtIndex:indexPath.row] objectForKey:@"url"];
+    UIImage *cachedImage = [[SDImageCache sharedImageCache] imageFromKey:imageKey];
+    [source setImage:cachedImage];
+    KTPhotoScrollViewController *photoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"detail"];
+    photoViewController = [photoViewController initWithDataSource:source andStartWithPhotoAtIndex:0];
+    [self.navigationController pushViewController:photoViewController animated:YES];
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -72,5 +87,8 @@
     return [feedData count];
 }
 
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+}
 @end
